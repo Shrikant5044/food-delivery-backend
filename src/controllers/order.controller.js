@@ -12,7 +12,7 @@ const placeOrder=async (req,res) => {
         
         if(!restaurantId||!items||items.length===0){
             
-            return res.status(400).json({message:"Restaurant ot items are required"})
+            return res.status(400).json({message:"Restaurant or items are required"})
             
         }
         

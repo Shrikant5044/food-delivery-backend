@@ -11,4 +11,4 @@ router.get("/getmyrestaurant",authMiddleware,restaurantController.getMyRestauran
 router.delete("/deletemyrestaurant/:restaurantid",authMiddleware,restaurantController.deleteMyRestaurant)
 router.put("/updaterestaurant/:restaurantid",authMiddleware,restaurantController.updateRestaurant)
 
-module.exports=router
+module.exports=router  

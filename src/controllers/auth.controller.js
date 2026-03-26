@@ -11,7 +11,7 @@ const signup=async (req,res)=>{
     const {name,email,password}=req.body
 
     if(!name||!email||!password){
-       return  res.status(401).json({message:"All Fields Required"})
+       return  res.status(400).json({message:"All Fields Required"})
     }
 
     const existingUser= await userModel.findOne({email})
@@ -72,4 +72,4 @@ const login= async (req,res)=>{
     
     
     
-    module.exports={signup,login}
+  module.exports={signup,login}
