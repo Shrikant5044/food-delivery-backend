@@ -48,10 +48,10 @@ totalPrice:{
 },
 
 
-status:{
-  type:"String",
-  emum:["Pending","Preaparing","Out for Delivery","Delivered","Cancelled"],
-  default:"pending"
+status: {
+  type: String,
+  enum: ["pending", "accepted", "preparing", "outfordelivery", "delivered", "cancelled"],
+  default: "pending"
 },
 
 
